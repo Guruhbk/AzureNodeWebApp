@@ -1,9 +1,10 @@
 export const config = {
     "databaseConfig": {
-        "host": "<hostname>",
-        "port": "<port>",
-        "username": "<username>",
-        "password": "<password>",
-        "database": "<database>"
+        "host": "azurefordemo.postgres.database.azure.com",
+        "port": 5432,
+        "username": "dbuser@azurefordemo",
+        "password": "Welcome1",
+        "database": "postgres"
     }
 }
+

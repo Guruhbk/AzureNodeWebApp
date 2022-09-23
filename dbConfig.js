@@ -29,12 +29,12 @@ sequelize.sequelize = new Sequelize(
     logging: false,
     // logging: console.log,
 
-    // dialectOptions: {
-    //   ssl: {
-    //     require: true,
-    //     rejectUnauthorized: false,
-    //   }
-    // }
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false,
+      }
+    }
     // query: {
     //     raw: true
     // }
