@@ -22,6 +22,10 @@ import {
 
 app.use(bodyParser.json())
 
+app.get('/', (req,res)=>{
+    res.send("Hello world")
+})
+//Get method to getEmployeeDetails 
 app.get('/getEmployeeDetails', async (req, res) => {
     try {
         console.log("calling get image API")
@@ -36,6 +40,7 @@ app.get('/getEmployeeDetails', async (req, res) => {
         });
     }
 })
+//update employee details 
 
 app.put('/updateEmployeeDetails/:id', async (req, res) => {
     try {
@@ -55,6 +60,8 @@ app.put('/updateEmployeeDetails/:id', async (req, res) => {
         });
     }
 })
+
+//create employee details 
 app.post('/createEmployeeDetails', async (req, res) => {
     try {
         console.log("calling createEmployeeDetails API")
@@ -68,6 +75,8 @@ app.post('/createEmployeeDetails', async (req, res) => {
         });
     }
 })
+
+//Delete employee
 app.delete('/deleteEmployee/:id', async (req, res) => {
     try {
         console.log("calling deleteEmployees API")

@@ -1,3 +1,4 @@
+//PostgreSQL connection string credentials
 export const config = {
     "databaseConfig": {
         "host": "<hostname>",

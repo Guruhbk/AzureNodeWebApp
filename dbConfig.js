@@ -6,7 +6,7 @@ const configEnv = () => {
   let data = {};
     data = {
       user: config.databaseConfig.username,
-      password: "Welcome1",
+      password: config.databaseConfig.password,
       database: config.databaseConfig.database,
       host: config.databaseConfig.host,
       port: config.databaseConfig.port
@@ -17,7 +17,7 @@ const configEnv = () => {
 };
 
 const dbconnect = configEnv();
-console.log('config ',config)
+
 sequelize.sequelize = new Sequelize(
   dbconnect.database,
   dbconnect.user,
